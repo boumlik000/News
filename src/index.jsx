@@ -1,14 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { createRoot } from 'react-dom/client';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import './index.css';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import '@fortawesome/fontawesome-free/css/all.css';
+
+createRoot(document.getElementById('root')).render(
+    
+  // استخدم createRoot بدلاً من ReactDOM.render
+  <Router>
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function
