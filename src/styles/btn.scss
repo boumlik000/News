@@ -1,4 +1,19 @@
-.btn1{
-    color: aqua;
-    font-size: 35px;
+@import 'variables';
+
+
+span.btn1{
+    background-color: $Darkmode-second_color ;
+    
+    padding: .5rem 1.1rem;
+    // text-align: center;
+    color: $light_font-color;
+    font-weight: 400;
+    transition: $transition_all;
+    margin-left: 100px;
+
+    &:hover,
+    &:focus{
+        background-color: $lightmode-second_color ;
+        color: $light_font-color;
+    }
 }

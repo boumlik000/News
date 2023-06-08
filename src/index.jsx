@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import '@fortawesome/fontawesome-free/css/all.css';
 import Btn from './components/btn';
+import CARD_NEWS_PROFILE from './components/card';
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/btn' element={<Btn />} />
+        <Route path='/card' element={<CARD_NEWS_PROFILE />} />
       </Routes>
     </Router>
 );
