@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import "../styles/card.scss";
 import SwiperCore ,{ Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -34,66 +34,91 @@ function CARD_NEWS_PROFILE(props) {
             title: 'Slide 4',
           }
       ];
-      const [activeSlideId, setActiveSlideId] = useState(1);
-      
+
+      const [activeSlideId, setActiveSlideId] = useState(null);
       const activeSlide = slides.find((slide) => slide.id === activeSlideId);
+      const [showActiveSlide, setShowActiveSlide] = useState(false);
 
       const handleSlideChange = (swiper) => {
         const realIndex = swiper.realIndex;
         const activeSlide = slides[realIndex];
         setActiveSlideId(activeSlide.id);
+        setShowActiveSlide(false); // Reset showActiveSlide when the slide changes
       };
+
+      useEffect(() => {
+        const delay = setTimeout(() => {
+          setShowActiveSlide(true);
+        }, 100);
+    
+        return () => {
+          clearTimeout(delay);
+        };
+      }, [activeSlideId]);
+      
 
     return (
       <>
       <h1>CArd</h1>
       <div className="container">
-        <div className="row">
-            <div className="col-6">
-                <Swiper
-                
-                autoplay={true}
-                effect="coverflow"
-                grabCursor={true}
-                centeredSlides={true}
-                loop={true}
-                slidesPerView="auto"
-                speed={1000} 
-                coverflowEffect={{
-                    rotate: 20,
-                    stretch: 80,
-                    depth: 200,
-                    modifier: 4,
-                    slideShadows: false,
-                }}
-                onSlideChange={handleSlideChange}
-                >
-                {slides.map((slide) => (
-                    <SwiperSlide key={slide.id}>
-                    <div
-                        className={`swiper-slide-content ${
-                        slide.id === activeSlideId ? 'active' : ''
-                        }`}
-                    >
-                        <img src={slide.imageUrl} alt={`Slide ${slide.id}`} />
-                        <h3>{slide.title}</h3>
-                    </div>
-                    </SwiperSlide>
-                ))}
-                </Swiper>
+        <div className="row row-card-home">
+            <div className="col-4">
+              <Swiper
+              
+              effect="coverflow"
+              grabCursor={true}
+              centeredSlides={true}
+              loop={true}
+              slidesPerView={'auto'}
+              speed={1000} 
+              coverflowEffect={{
+                  rotate: 20,
+                  stretch: 270,
+                  depth: 450,
+                  // modifier: 1,
+                  slideShadows: false,
+              }}
+              className='swiper-main'
+              // autoplay={{
+              //     delay: 1000,
+              //     // disableOnInteractKion: true,
+              //     // reverseDirection: true,
+              //   }}
+              onSlideChange={handleSlideChange}
+              >
+          {slides.map((slide) => (
+              <SwiperSlide key={slide.id}
+              className='swiper-Slide'>
+              <div
+                  className={`swiper-slide-content `}
+              >
+                  <img src={slide.imageUrl} alt={`Slide ${slide.id}`} className={`img-slider ${
+                  slide.id === activeSlideId ? 'active' : ''
+                  }`} />
+                  <h3 className='small_title-slide'>{slide.title}</h3>
+              </div>
+              </SwiperSlide>
+          ))}
+              </Swiper>
             </div>
-            <div className="col-6">
-            <div className="card-news-details">
+            <div className="col-8">
+              <div className={`card-news-details ${showActiveSlide ? 'show' : ''}`}>
+              {showActiveSlide && (
                 <div
-                    className={`card-news-card ${
+                  className={`card-news-card ${
                     activeSlide.id === activeSlideId ? 'active' : ''
-                    }`}
+                  }`}
                 >
-                    <img src={activeSlide.imageUrl} alt={`Slide ${activeSlide.id}`} />
-                    <h3>{activeSlide.title}</h3>
-                    <p>ID:{activeSlide.id}</p>
+                  <img
+                    src={activeSlide.imageUrl}
+                    alt={`Slide ${activeSlide.id}`}
+                    className={`img-active_profile ${showActiveSlide ? 'show_img' : ''}`}
+                  />
+                  <h3 className={`title_slide-full ${showActiveSlide ? 'show_title' : ''}`}>{activeSlide.title}</h3>
+                  {/* <p className='description_slide-full'>ID: {activeSlide.id}</p> */}
                 </div>
-                </div>
+              )}
+              </div>
             </div>
         </div>
       </div>

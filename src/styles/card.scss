@@ -1,6 +1,104 @@
 @import 'variables';
-img{
-    width: 100%;
-    height: 500px;
+.row-card-home{
+  height: 650px; ;
 }
+.swiper-main {
+    perspective: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .swiper-slide {
+      flex: 0 0 90%; /* Adjust the width as needed */
+      // margin-top: 50px;
+      transition: transform 0.5s;
+      object-fit: cover;
+      height:auto;
+      border-radius: 10px;
+      position: relative;    
+      .swiper-slide-content {
+        object-position: center;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        transform:perspective(1000px) rotateY(5deg);
+        .img-slider {
+          // transform-origin:center;
+          // transform:perspective(1000px) rotateY(15deg);
+          border-radius: 10px;
+          width: 100%;
+          // height: auto;
+          max-height: 300px;
+          object-fit: cover;
+          object-position: center;
+          filter: invert(3%) sepia(1%) saturate(27%) hue-rotate(4deg) brightness(90%) contrast(98%);
+        }
+        .small_title-slide{
+          position: absolute;
+          color: $Darkmode-second_color ;
+          font-size: 32px;
+        }
+      }
+    }
+  
+    
+  }
+
+.card-news-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  position: relative;
+  left: 0%; /* Start position: moved to the left */
+  opacity: 1;
+  transition: left 1s, opacity 1s;
+  
+  // &.show {
+  //   left: 0; /* Final position: moved to the center */
+  //   opacity: 1;
+  // }
+ 
+  
+
+  .card-news-card{
+    width: 80% ;
+    position: relative;
+  
+    .img-active_profile{
+      width: 40% ;
+      height: 600px;
+      border-top-left-radius:$radius;
+      border-bottom-left-radius: $radius;
+      max-height: 600px;
+      object-fit: cover;
+      box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.408);
+      opacity: 1;
+      transition: width 1s ,opacity 1s;
+     
+      // .show_img {
+      //   width: 40%;
+      //   opacity: 1; /* Final width: 40% */
+      // }
+    }
+    
+    .title_slide-full{
+      position: absolute;
+      top: 15px;
+      left: 45%;
+      font-size: 45px;
+      opacity: 1; /* Initially hidden */
+      transition: all 2s;
+      
+      // .show_title {
+      //   opacity: 1; /* Show the title */
+      // }
+    }
+  }
+}
+
 
