@@ -17,21 +17,25 @@ function CARD_NEWS_PROFILE(props) {
             id: 1,
             imageUrl: './img/img1.jpg',
             title: 'Slide 1',
+            descption:'dedscrtiption'
           },
           {
             id: 2,
             imageUrl: './img/img2.jpg',
             title: 'Slide 2',
+            descption:'dedscrtiption'
           },
           {
             id: 3,
             imageUrl: './img/img3.jpg',
             title: 'Slide 3',
+            descption:'dedscrtiption'
           },
           {
             id: 4,
             imageUrl: './img/img4.jpg',
             title: 'Slide 4',
+            descption:'dedscrtiption'
           }
       ];
 
@@ -115,7 +119,7 @@ function CARD_NEWS_PROFILE(props) {
                     className={`img-active_profile ${showActiveSlide ? 'show_img' : ''}`}
                   />
                   <h3 className={`title_slide-full ${showActiveSlide ? 'show_title' : ''}`}>{activeSlide.title}</h3>
-                  {/* <p className='description_slide-full'>ID: {activeSlide.id}</p> */}
+                  <p className='description_slide-full'>{activeSlide.descption}</p>
                 </div>
               )}
               </div>

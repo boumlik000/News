@@ -48,57 +48,55 @@
     
   }
 
-.card-news-details{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 !important;
-  position: relative;
-  left: 0%; /* Start position: moved to the left */
-  opacity: 1;
-  transition: left 1s, opacity 1s;
-  
-  // &.show {
-  //   left: 0; /* Final position: moved to the center */
-  //   opacity: 1;
-  // }
- 
-  
-
-  .card-news-card{
-    width: 80% ;
+  .card-news-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
     position: relative;
+    right: -30%; /* Start position: moved to the left */
+    animation: slide-in .2s forwards;
   
-    .img-active_profile{
-      width: 40% ;
-      height: 600px;
-      border-top-left-radius:$radius;
-      border-bottom-left-radius: $radius;
-      max-height: 600px;
-      object-fit: cover;
-      box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.408);
-      opacity: 1;
-      transition: width 1s ,opacity 1s;
-     
-      // .show_img {
-      //   width: 40%;
-      //   opacity: 1; /* Final width: 40% */
-      // }
+    .card-news-card {
+      width: 80%;
+      position: relative;
+  
+      .img-active_profile {
+        width: 100%;
+        height: 600px;
+        border-top-left-radius: $radius;
+        border-bottom-left-radius: $radius;
+        max-height: 600px;
+        object-fit: cover;
+        box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.408);
+        opacity: 0;
+        animation: fade-in 2s 0.1s forwards;
+      }
+  
+      .title_slide-full {
+        position: absolute;
+        top: 15px;
+        left: 45%;
+        font-size: 45px;
+        opacity: 0;
+        animation: fade-in 0.4s 1.8s forwards;
+      }
     }
-    
-    .title_slide-full{
-      position: absolute;
-      top: 15px;
-      left: 45%;
-      font-size: 45px;
-      opacity: 1; /* Initially hidden */
-      transition: all 2s;
-      
-      // .show_title {
-      //   opacity: 1; /* Show the title */
-      // }
+  
+    @keyframes slide-in {
+      100% {
+        right: 0;
+      }
+    }
+  
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        width: 40%;
+      }
     }
   }
-}
-
 
