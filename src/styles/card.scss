@@ -1,6 +1,7 @@
 @import 'variables';
 .row-card-home{
-  height: 650px; ;
+  height: 600px;
+  margin-top: 20px;
 }
 .swiper-main {
     perspective: 1200px;
@@ -9,7 +10,7 @@
     align-items: center;
     height: 100%;
     .swiper-slide {
-      flex: 0 0 90%; /* Adjust the width as needed */
+      flex: 0 0 60%; /* Adjust the width as needed */
       // margin-top: 50px;
       transition: transform 0.5s;
       object-fit: cover;
@@ -27,23 +28,28 @@
         height: 100%;
         transform:perspective(1000px) rotateY(5deg);
         .img-slider {
-          // transform-origin:center;
-          // transform:perspective(1000px) rotateY(15deg);
+          
+          transform:perspective(1000px) rotateY(15deg);
           border-radius: 10px;
           width: 100%;
-          // height: auto;
+          
           max-height: 300px;
           object-fit: cover;
           object-position: center;
           filter: invert(3%) sepia(1%) saturate(27%) hue-rotate(4deg) brightness(90%) contrast(98%);
+          
         }
         .small_title-slide{
           position: absolute;
+          text-align: center;
           color: $Darkmode-second_color ;
           font-size: 32px;
+          width: 90%;
+          text-shadow: $text-shadow;
         }
       }
     }
+    
   
     
   }
@@ -54,12 +60,17 @@
     align-items: center;
     padding: 0 !important;
     position: relative;
-    right: -30%; /* Start position: moved to the left */
-    animation: slide-in .2s forwards;
-  
+    // right: -30%; /* Start position: moved to the left */
+    // transform: translateX(-30%) rotate(36deg);
+    // animation: slide-in 2s 1s forwards;
     .card-news-card {
-      width: 80%;
+      width: 90%;
       position: relative;
+      box-shadow: $shadow-card;
+      height: 600px;
+      animation: slide-in .5s forwards;
+      border-radius: $radius;
+      
   
       .img-active_profile {
         width: 100%;
@@ -72,22 +83,64 @@
         opacity: 0;
         animation: fade-in 2s 0.1s forwards;
       }
-  
-      .title_slide-full {
+      .content_slide-full{
+        display: flex;
+        width: 60% ;
+        flex-direction: column;
+        justify-content: flex-start;
         position: absolute;
-        top: 15px;
-        left: 45%;
-        font-size: 45px;
+        top: 0;
+        left: 35%;
+        height: 100%;
         opacity: 0;
-        animation: fade-in 0.4s 1.8s forwards;
+        animation: fade-in-title-paragraph 1.3s 1.3s forwards;
+
+        .title_slide-full {
+          font-size: 45px;
+          margin-top: 30px;
+          display: -webkit-box;
+          overflow : hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;   
+          text-shadow: $text-shadow;
+        }
+        .description_slide-full{
+          font-size: 21px;
+          display: -webkit-box;
+          overflow : hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 11;
+          -webkit-box-orient: vertical; 
+          
+        }
+        .reaad_more-slide-full{
+          font-size: 16px;
+          
+          a{
+            color: $font-color;
+          }
+          &:hover{
+            font-size: 17px;
+          }
+        }
+
       }
-    }
   
+    }
     @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateX(-150%) scale(0)  ;
+        
+      }
       100% {
-        right: 0;
+        opacity: 1;
+        transform: translateX(0) scale(1) ;
+        z-index: 1000;
       }
     }
+    
   
     @keyframes fade-in {
       0% {
@@ -95,7 +148,18 @@
       }
       100% {
         opacity: 1;
-        width: 40%;
+        width: 30%;
+      }
+    }
+    @keyframes fade-in-title-paragraph {
+      0% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
       }
     }
   }

@@ -6,8 +6,9 @@ import Home from './pages/home';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import '@fortawesome/fontawesome-free/css/all.css';
-import Btn from './components/btn';
+import BTN from './components/btn';
 import CARD_NEWS_PROFILE from './components/card';
+import SEARCH from './components/serach';
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,8 +16,9 @@ createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/btn' element={<Btn />} />
+        <Route path='/btn' element={<BTN />} />
         <Route path='/card' element={<CARD_NEWS_PROFILE />} />
+        <Route path='/search' element={<SEARCH />} />
       </Routes>
     </Router>
 );

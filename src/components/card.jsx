@@ -5,47 +5,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/navigation';
-
+import {profileHome} from "./filteerdata/profilebox"
 
 SwiperCore.use([Navigation, Pagination, Autoplay,EffectCoverflow]);
 
 
 function CARD_NEWS_PROFILE(props) {
     
-    const slides = [
-        {
-            id: 1,
-            imageUrl: './img/img1.jpg',
-            title: 'Slide 1',
-            descption:'dedscrtiption'
-          },
-          {
-            id: 2,
-            imageUrl: './img/img2.jpg',
-            title: 'Slide 2',
-            descption:'dedscrtiption'
-          },
-          {
-            id: 3,
-            imageUrl: './img/img3.jpg',
-            title: 'Slide 3',
-            descption:'dedscrtiption'
-          },
-          {
-            id: 4,
-            imageUrl: './img/img4.jpg',
-            title: 'Slide 4',
-            descption:'dedscrtiption'
-          }
-      ];
+    
 
       const [activeSlideId, setActiveSlideId] = useState(null);
-      const activeSlide = slides.find((slide) => slide.id === activeSlideId);
+      const activeSlide = profileHome.find((slide) => slide.id === activeSlideId);
       const [showActiveSlide, setShowActiveSlide] = useState(false);
 
       const handleSlideChange = (swiper) => {
         const realIndex = swiper.realIndex;
-        const activeSlide = slides[realIndex];
+        const activeSlide = profileHome[realIndex];
         setActiveSlideId(activeSlide.id);
         setShowActiveSlide(false); // Reset showActiveSlide when the slide changes
       };
@@ -63,8 +38,7 @@ function CARD_NEWS_PROFILE(props) {
 
     return (
       <>
-      <h1>CArd</h1>
-      <div className="container">
+      <div className="">
         <div className="row row-card-home">
             <div className="col-4">
               <Swiper
@@ -74,23 +48,23 @@ function CARD_NEWS_PROFILE(props) {
               centeredSlides={true}
               loop={true}
               slidesPerView={'auto'}
-              speed={1000} 
+              speed={2000} 
               coverflowEffect={{
                   rotate: 20,
                   stretch: 270,
                   depth: 450,
-                  // modifier: 1,
+                  modifier: 1,
                   slideShadows: false,
               }}
               className='swiper-main'
-              // autoplay={{
-              //     delay: 1000,
-              //     // disableOnInteractKion: true,
-              //     // reverseDirection: true,
-              //   }}
+              autoplay={{
+                  delay: 4000,
+                  disableOnInteractKion: true,
+                  reverseDirection: true,
+                }}
               onSlideChange={handleSlideChange}
               >
-          {slides.map((slide) => (
+          {profileHome.map((slide) => (
               <SwiperSlide key={slide.id}
               className='swiper-Slide'>
               <div
@@ -100,6 +74,7 @@ function CARD_NEWS_PROFILE(props) {
                   slide.id === activeSlideId ? 'active' : ''
                   }`} />
                   <h3 className='small_title-slide'>{slide.title}</h3>
+                  <span className='logo-home-profile'></span>
               </div>
               </SwiperSlide>
           ))}
@@ -118,8 +93,11 @@ function CARD_NEWS_PROFILE(props) {
                     alt={`Slide ${activeSlide.id}`}
                     className={`img-active_profile ${showActiveSlide ? 'show_img' : ''}`}
                   />
-                  <h3 className={`title_slide-full ${showActiveSlide ? 'show_title' : ''}`}>{activeSlide.title}</h3>
-                  <p className='description_slide-full'>{activeSlide.descption}</p>
+                  <div className='content_slide-full'>
+                    <h3 className={`title_slide-full ${showActiveSlide ? 'show_title' : ''}`}>{activeSlide.title}</h3>
+                    <p className='description_slide-full'>{activeSlide.description}</p>
+                    <span className='reaad_more-slide-full'><a href="/zz">Read more</a></span>
+                  </div>
                 </div>
               )}
               </div>

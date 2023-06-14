@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/btn.scss"
-function Btn(props) {
+function BTN(props) {
     return (
       <>
       <span className="btn1 btn">{props.text}</span>
@@ -8,4 +8,4 @@ function Btn(props) {
     );
   }
   
-  export default Btn;
+  export default BTN;

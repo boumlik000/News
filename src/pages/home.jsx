@@ -15,6 +15,9 @@ function Home() {
             <li className='mt-4'>
                 <Link to="/card"> Card </Link>
              </li>
+            <li className='mt-4'>
+                <Link to="/search"> search </Link>
+             </li>
         </ul>
       </nav>
       </>
