@@ -10,7 +10,6 @@
          width: 25%;
          height: 40px;
          border: none;
-         border-radius: none;
          border-bottom-left-radius: $radius;
          border-top-left-radius: $radius;
          outline: none;
@@ -45,4 +44,26 @@
         }
         
      }
+}
+
+@media (max-width:1100px) {
+    .search{
+        .input_search{
+            width: 35%;
+        }
+    }
+}
+@media (max-width:768px) {
+    .search{
+        .input_search{
+            width: 40%;
+        }
+    }
+}
+@media (max-width:550px) {
+    .search{
+        .input_search{
+            width: 60%;
+        }
+    }
 }

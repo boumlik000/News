@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect  } from 'react';
 import "../styles/card.scss";
 import SwiperCore ,{ Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -38,9 +38,9 @@ function CARD_NEWS_PROFILE(props) {
 
     return (
       <>
-      <div className="">
+      <div className="container-fluid">
         <div className="row row-card-home">
-            <div className="col-4">
+            <div className="col-lg-4 col-md-3 col-12">
               <Swiper
               
               effect="coverflow"
@@ -55,7 +55,7 @@ function CARD_NEWS_PROFILE(props) {
                   depth: 450,
                   modifier: 1,
                   slideShadows: false,
-              }}
+                }}
               className='swiper-main'
               autoplay={{
                   delay: 4000,
@@ -68,7 +68,7 @@ function CARD_NEWS_PROFILE(props) {
               <SwiperSlide key={slide.id}
               className='swiper-Slide'>
               <div
-                  className={`swiper-slide-content `}
+                  className="swiper-slide-content"
               >
                   <img src={slide.imageUrl} alt={`Slide ${slide.id}`} className={`img-slider ${
                   slide.id === activeSlideId ? 'active' : ''
@@ -80,7 +80,7 @@ function CARD_NEWS_PROFILE(props) {
           ))}
               </Swiper>
             </div>
-            <div className="col-8">
+            <div className="col-lg-8 col-md-9 col-12 mt-md-0 mt-3">
               <div className={`card-news-details ${showActiveSlide ? 'show' : ''}`}>
               {showActiveSlide && (
                 <div
