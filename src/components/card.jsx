@@ -74,7 +74,7 @@ function CARD_NEWS_PROFILE(props) {
                   slide.id === activeSlideId ? 'active' : ''
                   }`} />
                   <h3 className='small_title-slide'>{slide.title}</h3>
-                  <span className='logo-home-profile'></span>
+                  <span className='logo-home-profile'>{slide.icon}</span>
               </div>
               </SwiperSlide>
           ))}
