@@ -1,0 +1,51 @@
+@import 'variables';
+.cardnews_2{
+    width: 90%;
+    box-shadow: $shadow-card;
+    margin: 0 auto;
+    position: relative;
+    border-radius: $radius;
+    border: none;
+    .cardnews_2-img{
+        height: 300px;
+        width: 100% !important;
+        border-top-left-radius:$radius ;
+        border-bottom-left-radius:$radius ;
+        box-shadow: $shadow-card;
+    }
+    .cardnews_2-title{
+        width: 100%;
+        color: $font-color;
+        text-shadow: $text-shadow;
+        margin-left: 10px;
+        font-size: 50px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    .cardnews_2-logo{
+        position: absolute;
+        bottom: 10px;
+          right: 10px;
+          font-size: 40px;
+          background-color: #fff;
+          padding: 5px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: $shadow-card;
+    }
+}
+
+// @media (max-width:550px) {
+//     .cardnews_2{
+//         width: 95%;
+//         height: 200px;
+//         .cardnews_2-img{
+//             height: 200px;
+//             width: 30%;
+//         }
+//     }
+// }

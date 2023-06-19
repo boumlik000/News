@@ -10,6 +10,8 @@ import BTN from './components/btn';
 import CARD_NEWS_PROFILE from './components/card';
 import SEARCH from './components/serach';
 import NAVBAR from './components/nav';
+import TAG from './components/tags';
+import CARDNEWS2 from './components/cardnews2';
 
 
 createRoot(document.getElementById('root')).render(
@@ -21,6 +23,8 @@ createRoot(document.getElementById('root')).render(
         <Route path='/card' element={<CARD_NEWS_PROFILE />} />
         <Route path='/search' element={<SEARCH />} />
         <Route path='/nav' element={<NAVBAR />} />
+        <Route path='/tags' element={<TAG />} />
+        <Route path='/cd2' element={<CARDNEWS2  />} />
       </Routes>
     </Router>
 );

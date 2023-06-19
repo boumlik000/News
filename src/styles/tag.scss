@@ -1,0 +1,23 @@
+@import 'variables';
+.tag{
+    padding: 4px 12px;
+    margin-left: 20px;
+    border-radius: $tag_radius;
+    box-shadow: $shadow-card;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    &:hover{
+        animation: moveTag 0.3s ease-in-out forwards;
+        cursor: pointer;
+    }
+    
+}
+@keyframes moveTag {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(3px) ;
+    }
+  }
