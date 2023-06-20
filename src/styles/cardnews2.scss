@@ -12,40 +12,27 @@
         border-top-left-radius:$radius ;
         border-bottom-left-radius:$radius ;
         box-shadow: $shadow-card;
+        object-fit: cover;
+        @media (max-width:575px) {
+            border-radius: $radius;
+        }
     }
-    .cardnews_2-title{
-        width: 100%;
-        color: $font-color;
-        text-shadow: $text-shadow;
-        margin-left: 10px;
-        font-size: 50px;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;  
-        overflow: hidden;
-    }
-    .cardnews_2-logo{
-        position: absolute;
-        bottom: 10px;
-          right: 10px;
-          font-size: 40px;
-          background-color: #fff;
-          padding: 5px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          box-shadow: $shadow-card;
+    .card-body{
+        position: relative;
+        height: 100%;
+        .cardnews_2-title{
+            width: 100%;
+            color: $font-color;
+            text-shadow: $text-shadow;
+            margin-left: 10px;
+            font-size: 50px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+            @media (max-width:575px) {
+                -webkit-line-clamp: 2;
+            }
+        }
     }
 }
-
-// @media (max-width:550px) {
-//     .cardnews_2{
-//         width: 95%;
-//         height: 200px;
-//         .cardnews_2-img{
-//             height: 200px;
-//             width: 30%;
-//         }
-//     }
-// }

@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/cardnews2.scss";
 import {profileHome} from "./filteerdata/profilebox"
+import ICONTAG from "./icontag";
 function CARDNEWS2(props){
     return(
         <>
@@ -14,7 +15,7 @@ function CARDNEWS2(props){
                     <div className="col-sm-8">
                         <div className="card-body">
                             <h5 className="cardnews_2-title">{item.title}</h5>
-                            <span className="cardnews_2-logo">{item.icon}</span>
+                            <ICONTAG icon={item.icon} className="cardnews_2-logo" />
                         </div>
                     </div>
                 </div>

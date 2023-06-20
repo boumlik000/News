@@ -1,0 +1,98 @@
+@import 'variables';
+body{
+    background: #eee;
+}
+.cardnews_1{
+    // max-height: 350px;
+    width: 90%;
+    box-shadow: $shadow-card;
+    margin: 0 auto;
+    position: relative;
+    border-radius: $radius;
+    border: none;
+    padding: 20px;
+    .cardnews_1-img{
+        display: flex;
+        position: relative;
+        margin:0 auto;  
+        align-items: center;
+        justify-content: center;  
+        height: 200px;
+        width: 80% ;
+        box-shadow: $shadow-card;
+        border-radius: $radius;
+        object-fit: cover;
+        @media (max-width:900px) {
+            height: 200px;
+            width: 90%;
+        }
+        @media (max-width:768px) {
+            height: 300px;
+            width: 70%;
+        }
+        @media (max-width:450px) {
+            height: 300px;
+            width: 90%;
+        }
+    }
+   .card-body{
+    position: relative;
+    .cardnews_1-title{
+        width: 100%;
+        color: $font-color;
+        text-shadow: $text-shadow;
+        font-size: 50px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    }
+    .cardnews_1-deescription{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        color: #3e3e3e;
+        font-size: 18px;
+    }
+    // .cardnews_1-logo{
+    //     position: absolute;
+    //     top: 0px;
+    //       right: 10px;
+    //       font-size: 40px;
+    //       background-color: #fff;
+    //       padding: 5px;
+    //       border-radius: 50%;
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       box-shadow: $shadow-card;
+    //       @media (max-width:768px) {
+    //         top: -30px;
+    //         right: 10%;
+    //     }
+    //       @media (max-width:450px) {
+    //         top: -20px;
+    //         right: 0;
+    //     }
+    // }
+    .cardnews_1-Date{
+        position: absolute;
+        bottom: 0px;
+        right: 20px;
+        margin-top: 20px;
+        font-weight: 500;
+        color: #3e3e3e;
+    }
+    .cardnews_1-Readmore{
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        font-size: 24px;
+        font-weight: 500;
+        display: inline-block;
+        color: #3e3e3e;
+    }
+   }
+}

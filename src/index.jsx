@@ -12,6 +12,10 @@ import SEARCH from './components/serach';
 import NAVBAR from './components/nav';
 import TAG from './components/tags';
 import CARDNEWS2 from './components/cardnews2';
+import CARDNEWS1 from './components/cardnews1';
+import CARDNEWS3 from './components/cardnews3';
+import ICONTAG from './components/icontag';
+import FOOTER from './components/footer';
 
 
 createRoot(document.getElementById('root')).render(
@@ -24,7 +28,11 @@ createRoot(document.getElementById('root')).render(
         <Route path='/search' element={<SEARCH />} />
         <Route path='/nav' element={<NAVBAR />} />
         <Route path='/tags' element={<TAG />} />
+        <Route path='/cd1' element={<CARDNEWS1  />} />
         <Route path='/cd2' element={<CARDNEWS2  />} />
+        <Route path='/cd3' element={<CARDNEWS3  />} />
+        <Route path='/ict' element={<ICONTAG  />} />
+        <Route path='/footer' element={<FOOTER  />} />
       </Routes>
     </Router>
 );

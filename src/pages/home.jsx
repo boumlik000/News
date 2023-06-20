@@ -27,7 +27,19 @@ function Home() {
                 <TAG name="politics"/>
              </li>
             <li className='mt-4'>
+                <Link to="/cd1"> card news 1 </Link>
+             </li>
+            <li className='mt-4'>
                 <Link to="/cd2"> card news 2 </Link>
+             </li>
+            <li className='mt-4'>
+                <Link to="/cd3"> card news 3 </Link>
+             </li>
+            <li className='mt-4'>
+                <Link to="/ict"> icont tag  </Link>
+             </li>
+            <li className='mt-4'>
+                <Link to="/footer"> footer  </Link>
              </li>
         </ul>
       </nav>
