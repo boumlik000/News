@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/navbar.scss";
+import {Link} from 'react-router-dom'
 
 const  NAVBAR =()=>{
 
@@ -7,20 +8,18 @@ const  NAVBAR =()=>{
 
   return(
     <>
-        <div className="Navbar">
-          <span className="nav-logo">logo</span>
-          <div className={`nav-items ${isOpen && "open"}`}>
-            <a href="/home">Home</a>
-            <a href="/politics">Politics</a>
-            <a href="/economics">Economics</a>
-            <a href="/sport">Sport</a>
-            <a href="/culture">culture</a>
-            <a href="/cinema">cinema</a>
+        
+          <div className="Navbar container">
+            <span className="nav-logo">logo</span>
+            <div className={`nav-items ${isOpen && "open"}`}>
+              <Link to="/"> Home </Link>
+              <Link to="/article"> news category</Link>
+            </div>
+            <div className={`nav-toggle ${isOpen && "open"}`} onClick={()=> setIsOpne(!isOpen)}>
+                <div className="bar"></div>
+            </div>
           </div>
-          <div className={`nav-toggle ${isOpen && "open"}`} onClick={()=> setIsOpne(!isOpen)}>
-              <div className="bar"></div>
-          </div>
-        </div>
+       
     </>
   )
 }

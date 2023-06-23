@@ -1,16 +1,13 @@
 @import 'variables';
-.container{
-  height: 2000px;
-}
 .Navbar{
-
-  
-  height: 50px;
+   /* Updated to occupy full width */
+  // height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #de6c6c;
-
+  background: transparent;
+  // box-shadow: 0 40px 10px 1px #000;
+  z-index: 1;
   .nav-logo{
     font-weight: 700;
     font-size: 21px;
@@ -19,12 +16,13 @@
   }
   .nav-items{
     a{
-      color: #fff;
-      font-size: 16px;
+      color: $font-color;
+      font-size: 21px;
       text-decoration: none;
       margin: 15px;
       position: relative;
       opacity: .9;
+      font-weight: 400;
       &:hover{
         opacity: 1;
         &::before{
@@ -34,7 +32,7 @@
           bottom: 0;
           width: 50%;
           height: 2px;
-          background: #fff;
+          background: $font-color;
           animation: slideIn .45s ease-in-out;
         }
       }

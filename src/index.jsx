@@ -16,6 +16,8 @@ import CARDNEWS1 from './components/cardnews1';
 import CARDNEWS3 from './components/cardnews3';
 import ICONTAG from './components/icontag';
 import FOOTER from './components/footer';
+import GALERYNEWS from './components/gallerynewstags';
+import ARTICLE from './pages/article';
 
 
 createRoot(document.getElementById('root')).render(
@@ -33,6 +35,8 @@ createRoot(document.getElementById('root')).render(
         <Route path='/cd3' element={<CARDNEWS3  />} />
         <Route path='/ict' element={<ICONTAG  />} />
         <Route path='/footer' element={<FOOTER  />} />
+        <Route path='/tagnews' element={<GALERYNEWS  />} />
+        <Route path='/article' element={<ARTICLE  />} />
       </Routes>
     </Router>
 );

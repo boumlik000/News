@@ -38,7 +38,7 @@ function CARD_NEWS_PROFILE(props) {
 
     return (
       <>
-      <div className="container-fluid">
+      <div className="container-fluid pt-5">
         <div className="row row-card-home">
             <div className="col-lg-4 col-md-3 col-12">
               <Swiper
@@ -59,7 +59,7 @@ function CARD_NEWS_PROFILE(props) {
               className='swiper-main'
               autoplay={{
                   delay: 4000,
-                  disableOnInteractKion: true,
+                  // disableOnInteractKion: true,
                   reverseDirection: true,
                 }}
               onSlideChange={handleSlideChange}

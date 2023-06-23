@@ -55,7 +55,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html', // The main HTML template
+      filename: 'index.html', // Output filename for the main page
+      chunks: ['main'],
     }),
     new webpack.ProvidePlugin({
       $: "jquery",

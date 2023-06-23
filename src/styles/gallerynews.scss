@@ -1,0 +1,21 @@
+@import 'variables';
+.news_categorie{
+    padding: 12px 9px;
+    // border: 1px solid #000;
+    margin: 0 2px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: $lightmode-second_color;
+    &:hover{
+        animation: slidup .5s ease-in-out forwards;
+        background-color: $Darkmode-second_color;
+    }
+}
+@keyframes slidup {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-1px);
+    }
+}

@@ -5,9 +5,8 @@ import ICONTAG from "./icontag";
 function CARDNEWS2(props){
     return(
         <>
-           <h1>cardnews2</h1>
             {profileHome.map((item) => (
-                <div className="cardnews_2 card  mt-4" key={item.id}>
+                <div className="cardnews_2   mt-4" key={item.id}>
                 <div className="row no-gutters">
                     <div className="col-sm-4 p-0">
                         <img className="cardnews_2-img " src={item.imageUrl} alt="Suresh Dasari Card" />

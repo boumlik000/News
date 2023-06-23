@@ -1,12 +1,14 @@
 @import 'variables';
 .tag{
     padding: 4px 12px;
-    margin-left: 20px;
+    margin:0px 10px;
     border-radius: $tag_radius;
     box-shadow: $shadow-card;
     font-size: 20px;
     position: relative;
+    background-color: #fff;
     display: inline-block;
+    color: $font-color;
     &:hover{
         animation: moveTag 0.3s ease-in-out forwards;
         cursor: pointer;

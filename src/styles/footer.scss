@@ -1,0 +1,37 @@
+@import'variables';
+footer{
+    background-color: $Darkmode-second_color;
+    height: auto;
+    .description{
+        font-size: 16px;
+        text-wrap:balance;
+    }
+    .categories-item{
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: $font-color;
+            // transition: all ease-in-out .2s;
+            &:hover{
+                font-weight: 500;
+            }
+        }
+    }
+    .social-media{
+        // margin: 0 auto;
+        .social-media-item{
+            margin-left: 10px;
+            a{
+                text-decoration: none;
+                color: $font-color;
+                transition: all ease-in-out .2s;
+                &:hover{
+                    padding: 1px;
+                    color: #3e3e3e;
+                }
+            }
+        }
+    }
+
+
+}

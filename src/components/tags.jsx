@@ -4,8 +4,7 @@ function TAG(props){
     return(
         <>
             <span className="tag">
-                {props.name}
-                hello    
+                {props.name}    
             </span>
 
         </>
