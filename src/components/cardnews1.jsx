@@ -5,7 +5,6 @@ import ICONTAG from "./icontag";
 function CARDNEWS1(props){
     return(
         <>
-           <h1>cardnews1</h1>
             {profileHome.map((x) => (
                 <div className="cardnews_1 card  mt-4" key={x.id}>
                 <div className="row no-gutters">
