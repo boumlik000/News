@@ -13,7 +13,7 @@ const  NAVBAR =()=>{
             <span className="nav-logo">logo</span>
             <div className={`nav-items ${isOpen && "open"}`}>
               <Link to="/"> Home </Link>
-              <Link to="/article"> news category</Link>
+              <Link to="/newsPage"> news category</Link>
             </div>
             <div className={`nav-toggle ${isOpen && "open"}`} onClick={()=> setIsOpne(!isOpen)}>
                 <div className="bar"></div>

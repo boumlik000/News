@@ -18,6 +18,7 @@ import ICONTAG from './components/icontag';
 import FOOTER from './components/footer';
 import GALERYNEWS from './components/gallerynewstags';
 import ARTICLE from './pages/article';
+import NEWS from './pages/newsPage';
 
 
 createRoot(document.getElementById('root')).render(
@@ -37,6 +38,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/footer' element={<FOOTER  />} />
         <Route path='/tagnews' element={<GALERYNEWS  />} />
         <Route path='/article' element={<ARTICLE  />} />
+        <Route path='/newsPage' element={<NEWS  />} />
       </Routes>
     </Router>
 );

@@ -1,15 +1,24 @@
-import React from 'react';
 import "../styles/gallerynews.scss"
-import {TAGS} from "./filteerdata/profilebox"
-function GALERYNEWS() {
-    return (
-      <>
-       <h1>gallery news</h1>
-       {TAGS.map((y)=>(
-        <span className='news_categorie'>{y.categorie}</span>
-       ))}
-      </>
-    );
-  }
-  
-  export default GALERYNEWS;
+// import React from 'react';
+import React from 'react';
+import { TAGS } from './filteerdata/profilebox';
+
+function GALERYNEWS({ selectedCategory, onCategoryChange }) {
+  return (
+    <>
+      {TAGS.map((tag) => (
+        <span
+          key={tag.id}
+          className={`news_categorie ${
+            tag.categorie === selectedCategory ? 'active' : ''
+          }`}
+          onClick={() => onCategoryChange(tag.categorie)}
+        >
+          {tag.categorie}
+        </span>
+      ))}
+    </>
+  );
+}
+
+export default GALERYNEWS;
