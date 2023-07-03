@@ -8,24 +8,27 @@
 }
 .home-header_section{
     position: relative;
-    background-image: url('/img/newshome.jpg');
-    height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-    z-index: -1;
-    .filter{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
-        z-index: -100;
+    .img-home{
+        position: relative;
+        .img-article{
+            height: 90vh !important;
+            object-fit: cover;
+            width: 100%;
+            background-attachment: fixed;
+            z-index: 0;
+        }
+        .filter{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #0000005d;
+            // filter: brightness(10%) contrast(150%);
+            z-index: 1;
+        }
     }
-}
+    }
 .home-news-section{
 
     //col-8

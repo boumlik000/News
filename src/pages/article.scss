@@ -1,0 +1,51 @@
+@import '../styles/variables';
+
+.img-title{
+    position: relative;
+    .img-filter{
+        position: relative;
+        .img-article{
+            height: 40vh !important;
+            object-fit: cover;
+            width: 100%;
+            background-attachment: fixed;
+            z-index: 0;
+        }
+        .filter{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #0000005d;
+            // filter: brightness(10%) contrast(150%);
+            z-index: 1;
+        }
+    }
+    .title-article{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        text-shadow: $text-shadow;
+        z-index: 2;
+    }
+}
+article{
+    .description-article{
+        font-size: 1.5rem;
+        line-height: 32px;
+        color: $font-color;
+        position: relative;
+        &::first-letter {
+            text-transform: uppercase;
+            font-size: 4rem;
+            font-weight: bold;
+            margin-top: 20px;
+            color: $Darkmode-second_color;
+            // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 5px; 
+           }
+    }
+}

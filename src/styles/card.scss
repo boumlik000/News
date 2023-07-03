@@ -1,4 +1,11 @@
 @import 'variables';
+.card-home{
+  position:  absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
 .row-card-home{
   z-index: 1005;
   height: 600px;

@@ -82,7 +82,7 @@ function NEWS() {
                     : item.categorie === selectedCategory
                 )
                 .map((item) => (
-                  <div className="col-4" key={item.id}>
+                  <div className="col-md-4 col-6" key={item.id}>
                     <CARDNEWS3 data={item} />
                   </div>
                 ))}

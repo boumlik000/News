@@ -6,7 +6,7 @@ function CARDNEWS2(props){
     return(
         <>
             {profileHome.map((item) => (
-                <a href="/" key={item.id}>
+                <a href="/article" key={item.id}>
                     <div className="cardnews_2 mt-4" >
                         <div className="row no-gutters">
                             <div className="col-sm-4 p-0">

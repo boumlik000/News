@@ -38,7 +38,7 @@ function CARD_NEWS_PROFILE(props) {
 
     return (
       <>
-      <div className="container-fluid pt-5">
+      <div className="container-fluid card-home">
         <div className="row row-card-home">
             <div className="col-lg-4 col-md-3 col-12">
               <Swiper

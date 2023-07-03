@@ -14,16 +14,13 @@ import FOOTER from '../components/footer';
 function Home() {
     return (
       <>
-        <header className='home-header'>
-                <div className="container-fluid shadow-1">
-                    <NAVBAR />
-                </div>
-        </header>
+        <NAVBAR />
         <div className='home-header_section'>
-            <div className="filter"></div>
-            <div className="pt-5">
-                <CARD_NEWS_PROFILE />
+            <div className='img-home'>
+                <img src="img/img1.jpg" alt="" className='img-article'/>
+                <div className="filter"></div>
             </div>
+            <CARD_NEWS_PROFILE />
         </div>
         <section className="home-news-section pb-4 my-2">
             <div className="container">
