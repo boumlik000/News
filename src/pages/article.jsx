@@ -1,13 +1,18 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
-import Btn from '../components/btn';
-import TAG from '../components/tags';
+import { useParams } from 'react-router-dom';
 import NAVBAR from '../components/nav';
 import './article.scss';
 import CARDNEWS1 from '../components/cardnews1';
 import FOOTER from '../components/footer';
+import { profileHome } from '../components/filteerdata/profilebox';
 
 function ARTICLE() {
+    const { id } = useParams();
+    const articleData = profileHome.find((item) => item.id === parseInt(id));
+
+    if (!articleData) {
+      return <div>Article not found</div>;
+    }
     return (
       <>
     {/* <nav>
@@ -18,15 +23,15 @@ function ARTICLE() {
       <NAVBAR />
       <div className="img-title">
         <div className="img-filter">
-          <img src="img/img1.jpg" alt="" className='img-article'/>
+          <img src={articleData.imageUrl} alt="" className='img-article'/>
           <div className="filter"></div>
         </div>
-        <h2 className='title-article'>title</h2>
+        <h2 className='title-article'>{articleData.title}</h2>
         {/* <ICONTAG icon={item.icon} className="cardnews_2-logo" /> */}
       </div>      
       <article className="container my-5">
         <p className='description-article'>
-          description
+        {articleData.description}
         </p>
 
 

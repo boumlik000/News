@@ -37,7 +37,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/ict' element={<ICONTAG  />} />
         <Route path='/footer' element={<FOOTER  />} />
         <Route path='/tagnews' element={<GALERYNEWS  />} />
-        <Route path='/article' element={<ARTICLE  />} />
+        <Route path='/article/:id' element={<ARTICLE  />} />
         <Route path='/newsPage' element={<NEWS  />} />
       </Routes>
     </Router>

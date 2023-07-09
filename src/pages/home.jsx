@@ -4,14 +4,13 @@ import NAVBAR from '../components/nav';
 import CARD_NEWS_PROFILE from '../components/card';
 import CARDNEWS2 from '../components/cardnews2';
 import SEARCH from '../components/serach';
-import TAG from '../components/tags';
-// import {FcPrevious,FcNext} from 'react-icons/fc';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import  { Navigation, Pagination, EffectCoverflow } from 'swiper';
 import CARDNEWS1 from '../components/cardnews1';
 import FOOTER from '../components/footer';
 
 function Home() {
+    
     return (
       <>
         <NAVBAR />
@@ -25,15 +24,6 @@ function Home() {
         <section className="home-news-section pb-4 my-2">
             <div className="container">
                 <SEARCH />
-                <div className="row">
-                    <div className="col-12 pt-5 d-flex justify-content-center">
-                        <TAG name="politics"/> 
-                        <TAG name="economics"/> 
-                        <TAG name="sport"/> 
-                        <TAG name="culture"/> 
-                        <TAG name="cinema"/> 
-                    </div>
-                </div>
                 <div className="row mt-5 pt-4">
                     <div className="col-md-8">
                         <div className="home-today-news">
