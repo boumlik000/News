@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect  } from 'react';
 import { useParams } from 'react-router-dom';
 import NAVBAR from '../components/nav';
 import './article.scss';
@@ -7,12 +7,18 @@ import FOOTER from '../components/footer';
 import { profileHome } from '../components/filteerdata/profilebox';
 
 function ARTICLE() {
-    const { id } = useParams();
-    const articleData = profileHome.find((item) => item.id === parseInt(id));
+  
+  const { id } = useParams();
+  const articleData = profileHome.find((item) => item.id === parseInt(id));
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
     if (!articleData) {
       return <div>Article not found</div>;
     }
+
+
     return (
       <>
     {/* <nav>

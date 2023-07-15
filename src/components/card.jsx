@@ -2,7 +2,7 @@ import React, { useState,useEffect  } from 'react';
 import "../styles/card.scss";
 import SwiperCore ,{ Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+// import { Link } from 'react-router-dom';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/navigation';
 import {profileHome} from "./filteerdata/profilebox"
@@ -38,6 +38,7 @@ function CARD_NEWS_PROFILE(props) {
 
     return (
       <>
+      
       <div className="container-fluid card-home">
         <div className="row row-card-home">
             <div className="col-lg-4 col-md-3 col-12">
@@ -96,7 +97,7 @@ function CARD_NEWS_PROFILE(props) {
                   <div className='content_slide-full'>
                     <h3 className={`title_slide-full ${showActiveSlide ? 'show_title' : ''}`}>{activeSlide.title}</h3>
                     <p className='description_slide-full'>{activeSlide.description}</p>
-                    <span className='reaad_more-slide-full'><a href="/zz">Read more</a></span>
+                    <span className='reaad_more-slide-full'>12/12/2002</span>
                   </div>
                 </div>
               )}

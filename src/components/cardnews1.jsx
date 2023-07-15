@@ -5,7 +5,7 @@ import {profileHome} from "./filteerdata/profilebox"
 import ICONTAG from "./icontag";
 function CARDNEWS1(props){
     return(
-        <>
+        <>          
             {profileHome.map((x) => (
                 <Link to={`/article/${x.id}`} key={x.id}>
                     <div className="cardnews_1 card  mt-4" key={x.id}>
