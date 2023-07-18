@@ -27,7 +27,7 @@ function Home() {
                 <div className="row mt-5 pt-4">
                     <div className="col-md-8">
                         <div className="home-today-news">
-                            <h2 className='home-news-section_title'>Today's news</h2>
+                            <h1 className='home-news-section_title-1'>Today's news</h1>
                             {/* <CARDNEWS1 /> */}
                             <Swiper
                                 // effect="coverflow"
@@ -72,8 +72,9 @@ function Home() {
                     </div>
                     <div className="col-md-4">
                         <div className="home-week-news">
-                            <h2 className='home-news-section_title'>this week</h2>
+                            <h1 className='home-news-section_title-2'>this week</h1>
                             <CARDNEWS2 />
+                            <div className="cardnews_2-filter"></div>
                         </div>
                     </div>
                 </div>

@@ -1,18 +1,26 @@
 @import 'variables';
 .cardnews_2{
     width: 90%;
-    box-shadow: $shadow-card;
+    // box-shadow: $shadow-card;
     margin: 0 auto;
     position: relative;
     border-radius: $radius;
     border: none;
     background-color: #fff;
+    border: 2px solid $third;
+    box-shadow: inset 0px 0px 10px 1px $secondary;
+    z-index: 1;
+    height: auto;
+    @media (max-width:575px) {
+        height: 270px;
+    }
+    // box-shadow: $shadow-card;
     .cardnews_2-img{
         height: 150px;
         width: 100% !important;
         border-top-left-radius:$radius ;
         border-bottom-left-radius:$radius ;
-        box-shadow: $shadow-card;
+        box-shadow: 2px 0px 10px 1px $secondary ;
         object-fit: cover;
         @media (max-width:575px) {
             border-radius: $radius;
@@ -27,7 +35,7 @@
             text-shadow: $text-shadow;
             margin: 0 auto;
             padding-top: 10px;
-            font-size: 30px;
+            // font-size: 30px;
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;  
@@ -38,4 +46,5 @@
             }
         }
     }
+    
 }

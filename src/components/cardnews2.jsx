@@ -16,9 +16,10 @@ function CARDNEWS2(props){
                         </div>
                         <div className="col-sm-8">
                             <div className="card-body">
-                            <h5 className="cardnews_2-title">{item.title}</h5>
+                            <h2 className="cardnews_2-title">{item.title}</h2>
                             <ICONTAG icon={item.icon} className="cardnews_2-logo" />
                             </div>
+                            
                         </div>
                         </div>
                     </div>

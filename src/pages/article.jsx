@@ -32,7 +32,7 @@ function ARTICLE() {
           <img src={articleData.imageUrl} alt="" className='img-article'/>
           <div className="filter"></div>
         </div>
-        <h2 className='title-article'>{articleData.title}</h2>
+        <h1 className='title-article'>{articleData.title}</h1>
         {/* <ICONTAG icon={item.icon} className="cardnews_2-logo" /> */}
       </div>      
       <article className="container my-5">
