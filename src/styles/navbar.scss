@@ -55,18 +55,18 @@
     display: none;
   }
 
-}
-.nav-filter{
-  background-color: $font-color;
-  opacity: 3%;
-  position: absolute;
-  height: 10%;
-  width: 100%;
-  border-radius: 6px;
-  flex: 1;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  .nav-filter{
+    background-color: $font-color;
+    opacity: 3%;
+    position: absolute;
+    height: 5rem;
+    width: 100%;
+    border-radius: 6px;
+    flex: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 @media (max-width:768px) {
   .Navbar{

@@ -18,8 +18,8 @@ const  NAVBAR =()=>{
             <div className={`nav-toggle ${isOpen && "open"}`} onClick={()=> setIsOpne(!isOpen)}>
                 <div className="bar"></div>
             </div>
+          <div className="nav-filter"></div>
           </div>
-            <div className="nav-filter"></div>
        
     </>
   )
