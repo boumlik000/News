@@ -5,28 +5,23 @@ import {FaFacebookF,FaGithub,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
 function FOOTER() {
     return (
       <>
-       {/* <h1>footer</h1> */}
         <div className="container py-4">
             <div className="row gy-4 gx-5">
                 <div className="col-lg-4 col-md-6">
-                    <h5 className="h1 text-white">logo</h5>
-                    <p className="small text-muted description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                    <p className="small text-muted mb-0 copyright">&copy; Copyrights. All rights reserved. <a className="text-primary" href="/">Mohamed boumlik</a></p>
+                    <h2 className="">logo</h2>
+                    <p className="small  description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <p className="small  mb-0 copyright">&copy; Copyrights. All rights reserved. <a className="" href="/">Mohamed boumlik</a></p>
                 </div>
                 <div className="col-lg-4 col-md-6">
-                    <h5 className="text-white mb-3">categories</h5>
-                    <ul className="list-unstyled text-muted row">
-                        <li className='col-md-6 categories-item'><a href="/">Home</a></li>
-                        <li className='col-md-6 categories-item'><a href="/">politics</a></li>
-                        <li className='col-md-6 categories-item'><a href="/">economics</a></li>
-                        <li className='col-md-6 categories-item'><a href="/">sport</a></li>
-                        <li className='col-md-6 categories-item'><a href="/">culture</a></li>
-                        <li className='col-md-6 categories-item'><a href="/">cinema</a></li>
+                    <h2 className="mb-3">categories</h2>
+                    <ul className="list-unstyled  row">
+                        <li className='col-md-12 categories-item'><a href="/">Home</a></li>
+                        <li className='col-md-12 categories-item'><a href="/">categories</a></li>
                     </ul>
                 </div>
                 <div className="col-lg-2 col-md-6">
-                    <h5 className="text-white mb-3">Social media</h5>
-                    <ul className="list-unstyled text-muted social-media">
+                    <h2 className=" mb-3">Social media</h2>
+                    <ul className="list-unstyled  social-media">
                         <li className='d-inline social-media-item'><a href="/"><FaFacebookF /></a></li>
                         <li className='d-inline social-media-item'><a href="/"><FaTwitter /></a></li>
                         <li className='d-inline social-media-item'><a href="/"><FaLinkedinIn /></a></li>
@@ -34,8 +29,8 @@ function FOOTER() {
                     </ul>
                 </div>
                 <div className="col-lg-2 col-md-6">
-                    <h5 className="text-white mb-3">Contact Us</h5>
-                    <p className="small text-muted description">aaaa@gmail.com</p>
+                    <h2 className=" mb-3">Contact Us</h2>
+                    <p className="small  description">aaaa@gmail.com</p>
                 </div>
             </div>
         </div>

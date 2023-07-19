@@ -2,7 +2,7 @@ import React, { useState,useEffect  } from 'react';
 import "../styles/card.scss";
 import SwiperCore ,{ Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/navigation';
 import {profileHome} from "./filteerdata/profilebox"
@@ -74,7 +74,7 @@ function CARD_NEWS_PROFILE(props) {
                   <img src={slide.imageUrl} alt={`Slide ${slide.id}`} className={`img-slider ${
                   slide.id === activeSlideId ? 'active' : ''
                   }`} />
-                  <h3 className='small_title-slide'>{slide.title}</h3>
+                  <h1 className='small_title-slide'>{slide.title}</h1>
                   <span className='logo-home-profile'>{slide.icon}</span>
               </div>
               </SwiperSlide>
@@ -95,9 +95,13 @@ function CARD_NEWS_PROFILE(props) {
                     className={`img-active_profile ${showActiveSlide ? 'show_img' : ''}`}
                   />
                   <div className='content_slide-full'>
-                    <h3 className={`title_slide-full ${showActiveSlide ? 'show_title' : ''}`}>{activeSlide.title}</h3>
+                    <h1 className={`title_slide-full ${showActiveSlide ? 'show_title' : ''}`}>{activeSlide.title}</h1>
                     <p className='description_slide-full'>{activeSlide.description}</p>
-                    <span className='reaad_more-slide-full'>12/12/2002</span>
+                    <Link to={`/article/${activeSlide.id}`} key={activeSlide.id}>
+                      <span className='reaad_more-slide-full '>Read More</span>                   
+                    </Link>
+                    <span className='timing-news'>12/12/2002</span>
+
                   </div>
                 </div>
               )}

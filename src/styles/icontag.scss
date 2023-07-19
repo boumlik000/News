@@ -1,5 +1,6 @@
 @import 'variables';
 .icontag{
+    color: $third;
     position: absolute;
     font-size: 30px;
     background-color: #fff;
@@ -29,6 +30,7 @@
 .cardnews_2-logo{
     bottom: 10px;
     right: 10px;
+    
     @media (max-width:575px) {
         bottom: unset;
         top: 10px;

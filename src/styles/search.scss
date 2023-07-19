@@ -19,13 +19,13 @@
          text-indent: 20px;
          color: $font-color;
          font-weight: 400;
-         font-size: 20px;
+         font-size: var(--fs-500);
          line-height: 32px;
          
          &::placeholder{
              text-indent: 10px;
-             font-size: 20px;
-             color: #6C6C6C;
+            //  font-size: 20px;
+             color: $third;
              padding: 10px;
              font-weight: 400;
          }
@@ -42,7 +42,7 @@
         background-color: #fff;
         transition: .1s all ease-in-out;
         &:hover{
-            color: $lightmode-second_color;
+            color: $primary;
         }
         
      }

@@ -3,6 +3,7 @@
 .home-header_section{
     position: relative;
     height: auto;
+    // margin: 0 auto;
     .img-home{
         position: relative;
         .img-article{
@@ -23,7 +24,7 @@
             z-index: 1;
         }
     }
-    }
+}
 .home-news-section{
 
     //col-8
@@ -61,7 +62,7 @@
                             cursor: pointer;
                             align-items: center;
                             background-color: #fff;
-                            border: 1px solid $Darkmode-second_color;
+                            border: 1px solid $primary;
                             border-radius: 10%;
                             display: flex;
                             font-weight: 700;
@@ -73,14 +74,14 @@
                             box-shadow: $shadow-card;
                             &::after{
                                 font-size: 21px;
-                                color: $Darkmode-second_color;
+                                color: $primary;
                             }
                         }
                         &.swiper-button-next{
                             cursor: pointer;
                             align-items: center;
                             background-color: #fff;
-                            border: 1px solid $Darkmode-second_color;
+                            border: 1px solid $primary;
                             border-radius: 10%;
                             display: flex;
                             font-weight: 700;
@@ -92,7 +93,7 @@
                             box-shadow: $shadow-card;
                             &::after{
                                 font-size: 21px;
-                                color: $Darkmode-second_color;
+                                color: $primary;
                             }
                         }
                 }
@@ -102,7 +103,7 @@
                   top: 25px;
                   z-index: 0;
                   .swiper-pagination-bullet{
-                    background-color: $Darkmode-second_color;
+                    background-color: $primary;
                   }
                 }
             } 
@@ -127,7 +128,9 @@
         border-radius: $radius;
         position: relative;
         @media (max-width:1000px) {
-            max-width:100%;
+            margin-top: 40px !important;
+            max-width:90%;
+            margin: 0 auto;
             // background: #000;
         }
 
@@ -148,5 +151,20 @@
             left: 0;
             z-index: 0;
         }
+    }
+}
+footer{
+    position: relative;
+    .footer-filter{
+        background-color: $font-color;
+        opacity: 2%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 6px;
+        flex: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 }

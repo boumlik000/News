@@ -82,6 +82,7 @@ function Home() {
         </section>
         <footer>
             <FOOTER/>
+            <div className="footer-filter"></div>
         </footer>
         
 

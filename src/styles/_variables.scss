@@ -1,8 +1,14 @@
 // colors
 $font-color: #050505;
+$darkmode-font:#FAFAFA;
+$bg:#FAFAFA;
+
+
 $light_font-color: #fbfbfb;
 $lightmode-second_color:#ff8f2c;
 $Darkmode-second_color:#ffa455;
+
+
 $primary:#49555A;
 $secondary:#E8E4E3;
 $third:#ABB6BA;
@@ -39,7 +45,7 @@ body{
     line-height: 1.7;
     color: $font-color;
     background-color: #fafafa;
-    font-size: var(--fs-400) !important;
+    font-size: var(--fs-400) ;
 }
 h1,h2,h3{
     line-height: 1.1;
@@ -62,8 +68,8 @@ a{
     padding-right:0 ;
     padding-left: 0;
     @media (max-width:1000px) {
-        max-width:95%;
-        margin: 0 auto;
+        max-width:100%;
+        
     }
 }
 .row >*{
