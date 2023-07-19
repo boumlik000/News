@@ -20,7 +20,7 @@ function CARDNEWS3({ data }) {
             <ICONTAG icon={data.icon} className="cardnews_3-logo" />
           </div>
           <div className="card-body">
-            <h5 className="cardnews_3-title pb-2">{data.title}</h5>
+            <h2 className="cardnews_3-title pb-2">{data.title}</h2>
             <span className="cardnews_3-Date">12/12/20022</span>
           </div>
         </div>

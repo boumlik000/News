@@ -53,6 +53,9 @@ h1,h2,h3{
 }
 h1{
     font-size: var(--fs-700);
+    @media (max-width:1000px) {
+        font-size: var(--fs-600);
+    }
 }
 h2{
     font-size: var(--fs-600);

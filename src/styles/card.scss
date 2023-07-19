@@ -321,16 +321,42 @@
 
         .img-active_profile {
           width: 100%;
-          height: 500px;
+          height: 100%;
           max-height: 500px;
-          
+          animation: fade-up 2s 0.1s forwards;
+        }
+        @keyframes fade-up {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+            width: 100%;
+            height: 250px;
+          }
         }
         .content_slide-full{
-          width: 65% ;
-          left: 33%;
+          width: 90% ;
+          top: 55%;
+          height: 200px;
+          left: 5%;
           .title_slide-full{
             // font-size: 40px;
+            -webkit-line-clamp: 1;
             margin-top: 0px;
+          }
+          .description_slide-full{
+            font-size: var(--fs-500);
+            display: -webkit-box;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
+            color: $primary;
+            
+          }
+          .reaad_more-slide-full,.timing-news{
+            font-size: var(--fs-400);
           }
         }
       }
@@ -351,6 +377,12 @@
   }
 
   @media (max-width:450px) {
+    .card-home{
+      
+      top: 49.5%;
+      
+      
+    }
     .swiper-main {
       height: 100%;
       .swiper-slide {
@@ -372,32 +404,52 @@
       height: 350px;
       
       .card-news-card {
-        width: 100%;
-        height: 350px;
-        max-height: 350px;
+        width: 85%;
+        height: 400px;
+        max-height: 500px;
 
         .img-active_profile {
           width: 100%;
-          height: 350px;
-          max-height: 350px;
+          height: 100%;
+          max-height: 500px;
+          animation: fade-up2 2s 0.1s forwards;
           
         }
+        @keyframes fade-up2 {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+            width: 100%;
+            height: 200px;
+          }
+        }
         .content_slide-full{
-          width: 60%;
-          left: 35%;
+          width: 90% ;
+          top: 52%;
+          height: 190px;
+          left: 5%;
           .title_slide-full{
-            // font-size: 30px;
-            margin-top: 20px;
+            // font-size: 40px;
+            -webkit-line-clamp: 1;
+            margin-top: 0px;
+            font-size: var(--fs-500);
           }
           .description_slide-full{
-            // font-size: 15px;
+            font-size: var(--fs-400);
             display: -webkit-box;
             overflow : hidden;
             text-overflow: ellipsis;
-            -webkit-line-clamp: 8;
-            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
+            color: $primary;
             
           }
+          .reaad_more-slide-full,.timing-news{
+            font-size: var(--fs-300);
+          }
+          
         }
       }
 

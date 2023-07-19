@@ -48,6 +48,7 @@ function ARTICLE() {
       </article>
       <footer>
         <FOOTER />
+        <div className="footer-filter"></div>
       </footer>
 
 

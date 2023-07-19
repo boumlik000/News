@@ -54,8 +54,9 @@ function NEWS() {
           </div>
         </div>
       </section>
-      <footer className="mt-4">
+      <footer className="mt-4 footer-news">
         <FOOTER />
+        <div className="footer-filter"></div>
       </footer>
     </>
   );

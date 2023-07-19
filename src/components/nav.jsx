@@ -9,7 +9,7 @@ const  NAVBAR =()=>{
   return(
     <>
         
-          <div className="Navbar container">
+          <div className="Navbar">
             <span className="nav-logo">logo</span>
             <div className={`nav-items ${isOpen && "open"}`}>
               <Link to="/"> Home </Link>
@@ -19,6 +19,7 @@ const  NAVBAR =()=>{
                 <div className="bar"></div>
             </div>
           </div>
+            <div className="nav-filter"></div>
        
     </>
   )
