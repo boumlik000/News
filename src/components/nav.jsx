@@ -8,7 +8,7 @@ const  NAVBAR =()=>{
 
   return(
     <>
-        
+
           <div className="Navbar">
             <span className="nav-logo">logo</span>
             <div className={`nav-items ${isOpen && "open"}`}>
@@ -20,7 +20,7 @@ const  NAVBAR =()=>{
             </div>
           <div className="nav-filter"></div>
           </div>
-       
+
     </>
   )
 }

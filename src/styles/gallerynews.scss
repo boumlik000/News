@@ -5,10 +5,11 @@
     margin: 0 .4px;
     cursor: pointer;
     display: inline-block;
-    background-color: $lightmode-second_color;
+    background-color: $third;
+    color: $darkmode-font;
     &:hover{
         animation: slidup .5s ease-in-out forwards;
-        background-color: $Darkmode-second_color;
+        background-color: $primary;
     }
 }
 @keyframes slidup {

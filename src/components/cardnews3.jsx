@@ -23,6 +23,7 @@ function CARDNEWS3({ data }) {
             <h2 className="cardnews_3-title pb-2">{data.title}</h2>
             <span className="cardnews_3-Date">12/12/20022</span>
           </div>
+          <div className="cardnews_3-filter"></div>
         </div>
       </div>
     </Link>
