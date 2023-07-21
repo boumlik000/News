@@ -1,6 +1,9 @@
 import {MdSportsBasketball} from 'react-icons/md'
 import {GoLaw} from 'react-icons/go'
 import {TbBusinessplan} from 'react-icons/tb'
+import {SiYourtraveldottv} from 'react-icons/si'
+import {BiCameraMovie} from 'react-icons/bi'
+
 
 export const TAGS=[
   {
@@ -33,7 +36,7 @@ export const TAGS=[
 
 export const profileHome= [
     {
-        id: 1,
+        id: 0,
         categorie:'sport',
         imageUrl: '/img/djoko.jpg',
         title: ' Novak Djokovic - The Tennis Maestro',
@@ -48,10 +51,10 @@ export const profileHome= [
         icon:<MdSportsBasketball />,
       },
       {
-        id: 2,
+        id: 1,
         categorie:'politics',
         imageUrl: '/img/img-trump.jpeg',
-        title: "'Trump's Political Journey: A Controversial Chapter in American Politics'",
+        title: "Trump's Political Journey: A Controversial Chapter in American Politics'",
         description:"Donald J. Trump, the 45th President of the United States, is a prominent figure whose time in office has left an indelible mark on American politics. As a businessman turned politician, Trump's rise to power was marked by a wave of populism and a promise to 'Make America Great Again.'"+
         "Taking office in January 2017, Trump's presidency was characterized by a mix of bold policy initiatives and polarizing rhetoric. His unconventional communication style, often via Twitter, garnered widespread attention and sometimes fueled divisive debates across the nation."+
         "During his tenure, Trump sought to reshape America's domestic and foreign policies, with a focus on tax cuts, deregulation, and tough stances on immigration. His America-first approach led to renegotiations of international trade deals, while also creating tensions with long-standing allies."+
@@ -64,7 +67,7 @@ export const profileHome= [
         icon:<GoLaw />,
       },
       {
-        id: 3,
+        id: 2,
         categorie:'economics',
         imageUrl: '/img/img-ww1.jpeg',
         title: 'World War I: The Economic Aftermath and Global Consequences',
@@ -82,7 +85,7 @@ export const profileHome= [
         icon:<TbBusinessplan />,
       },
       {
-        id: 4,
+        id: 3,
         categorie:'cinema',
         imageUrl: '/img/img-inception.jpeg',
         title: 'Inception: A Cinematic Masterpiece of Mind-Bending Realities',
@@ -96,10 +99,10 @@ export const profileHome= [
         +"'Inception' challenges its audience to question the nature of reality and the power of the human mind. The ambiguous ending has sparked countless debates and theories, encouraging viewers to interpret the film in their own unique ways."
         +"The film's critical and commercial success catapulted Christopher Nolan's reputation as a visionary filmmaker, solidifying his place among the greats of cinema. 'Inception' earned numerous accolades, including four Academy Awards, and continues to be celebrated as one of the most influential and thought-provoking films in cinematic history."
         +"In conclusion, 'Inception' is an unparalleled cinematic experience that weaves together breathtaking visuals, a complex narrative, and powerful performances. Nolan's audacious exploration of the human psyche and his dedication to practical filmmaking have left an enduring mark on the world of cinema. 'Inception' remains an unforgettable journey into the realm of dreams and a testament to the boundless possibilities of storytelling on the silver screen.",
-        icon:<MdSportsBasketball />,
+        icon:<BiCameraMovie />,
       },
       {
-        id: 5,
+        id: 4,
         categorie:'culture',
         imageUrl: '/img/img-india.jpeg',
         title: 'India: A Tapestry of Vibrant Cultures and Timeless Traditions',
@@ -113,10 +116,10 @@ export const profileHome= [
         +"Indian literature is a treasure trove of ancient epics, scriptures, and philosophical texts, alongside modern works that reflect the changing dynamics of society. From the verses of the Vedas and Upanishads to the poetic verses of Rabindranath Tagore and the insightful writings of R.K. Narayan, India's literary heritage is both profound and diverse."
         +"Despite its vast cultural diversity, a sense of unity prevails among the people of India. The spirit of 'unity in diversity' binds the country together, fostering a sense of pride in its heritage and traditions."
         +"In conclusion, India's culture is an enchanting tapestry woven with a rich history, diverse traditions, and a celebration of life's colors. From its artistic expressions to its culinary delights, from its architectural wonders to its spiritual practices, India's cultural heritage is an endless source of wonder and inspiration. This nation, with its cultural abundance, continues to captivate the world and remains a timeless symbol of unity and cultural richness.",
-        icon:<MdSportsBasketball />,
+        icon:<SiYourtraveldottv />,
       },
       {
-        id: 6,
+        id: 5,
         categorie:'sport',
         imageUrl: '/img/img-r7.jpeg',
         title: 'Cristiano Ronaldo: A Legend in Juventus',
@@ -132,7 +135,7 @@ export const profileHome= [
         icon:<MdSportsBasketball />,
       },
       {
-        id: 7,
+        id: 6,
         categorie:'cinema',
         imageUrl: '/img/img-casino.jpeg',
         title: 'Casino: A Riveting Tale of Vice, Greed, and Betrayal',
@@ -145,10 +148,10 @@ export const profileHome= [
         +"The film's cinematography, art direction, and costume design capture the essence of the era, immersing viewers in the opulent world of Las Vegas. The use of vibrant colors and stylish visuals heightens the film's atmosphere, creating a striking contrast to the dark and violent events unfolding."
         +"'Casino' received critical acclaim for its captivating storytelling, stellar performances, and Scorsese's direction. It earned several Academy Award nominations and has since become a cult classic, leaving a lasting impact on the crime genre in cinema."
         +"In conclusion, 'Casino' is a gripping and engrossing film that peels back the layers of Las Vegas' glitzy surface to expose the hidden world of crime, ambition, and betrayal. With its stellar cast, powerful storytelling, and authentic depiction of the casino world, 'Casino' remains an unforgettable cinematic experience that continues to captivate audiences decades after its release.",
-        icon:<MdSportsBasketball />,
+        icon:<BiCameraMovie />,
       },
       {
-        id: 8,
+        id: 7,
         categorie:'politics',
         imageUrl: '/img/img-m6.jpeg',
         title: 'Mohammed VI: A Transformative Reign in Moroccan Politics',
@@ -160,11 +163,11 @@ export const profileHome= [
         +"Additionally, Mohammed VI has played a prominent role on the international stage, strengthening Morocco's diplomatic relations with various countries and international organizations. His efforts to promote peace and stability in the region have earned him recognition as a respected leader in the global arena."
         +"Despite the significant progress made during his reign, challenges remain. Issues such as unemployment, income inequality, and corruption continue to be areas of concern that require ongoing attention and efforts."
         +"In conclusion, Mohammed VI's reign as the King of Morocco has been marked by transformative political reforms, economic development, and efforts to address societal issues. His commitment to democratization, women's rights, and economic progress has propelled Morocco toward a brighter future. As he continues to navigate the complexities of governance and strive for a prosperous and inclusive society, King Mohammed VI remains a central figure in shaping Morocco's political landscape.",
-        icon:<MdSportsBasketball />,
+        icon:<GoLaw />,
       }
       ,
       {
-        id: 9,
+        id: 8,
         categorie:'culture',
         imageUrl: '/img/img-dubai.jpeg',
         title: 'The Rich Cultural Heritage of the Middle East: A Journey Through History',
@@ -178,11 +181,11 @@ export const profileHome= [
         +"Contemporary Cultural Landscape: Today, the Middle East continues to thrive as a culturally diverse region. Arab, Turkish, Persian, Kurdish, and other ethnic identities coexist, each contributing its distinct traditions and customs. Traditional arts, music, and dance continue to flourish alongside contemporary expressions, influenced by globalization and technology."
         +"Challenges and Resilience: The Middle East has faced challenges such as conflicts, political instability, and social upheavals. Nevertheless, the region's cultural heritage remains resilient, acting as a source of unity and identity for its people. Cultural institutions, museums, and festivals play a vital role in preserving and promoting the region's artistic and historical legacy."
         +"In conclusion, the culture of the Middle East is a tapestry woven with the threads of ancient civilizations, religious significance, artistic expressions, and intellectual achievements. It has endured through centuries of change, reflecting the resilience and creativity of the region's people. As the Middle East continues to evolve, its cultural heritage remains an enduring source of pride and inspiration, fostering connections between its past, present, and future.",
-        icon:<MdSportsBasketball />,
+        icon:<SiYourtraveldottv />,
       }
       ,
       {
-        id: 10,
+        id: 9,
         categorie:'economics',
         imageUrl: '/img/img-russia.jpeg',
         title: 'The Economic Evolution of Russia since World War II: From Soviet Era to Modern Challenges',
@@ -197,6 +200,6 @@ export const profileHome= [
         +"Sanctions and Global Tensions: In recent years, Russia's economy has been impacted by geopolitical tensions and international sanctions related to its actions in Crimea and Ukraine. These sanctions targeted key sectors like finance, energy, and technology, limiting access to global markets and foreign investments."
         +"Diversification and Future Prospects: Recognizing the need for economic diversification, Russia has been focusing on sectors such as agriculture, technology, and manufacturing. The government aims to reduce reliance on oil exports and boost innovation to foster sustainable growth."
         +"In conclusion, Russia's economy has undergone significant changes since World War II, transitioning from a centrally planned system to a market-oriented economy. The country faced challenges during its transformation, including economic turbulence, dependence on commodities, and geopolitical tensions. As Russia looks to the future, diversification, innovation, and economic reforms are vital for sustaining growth and navigating the complexities of the global economy.",
-        icon:<MdSportsBasketball />,
+        icon:<TbBusinessplan />,
       }
   ];

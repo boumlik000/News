@@ -8,8 +8,9 @@
             height: 40vh !important;
             object-fit: cover;
             width: 100%;
-            background-attachment: fixed;
+            object-position: center;
             z-index: 0;
+            
         }
         .filter{
             position: absolute;

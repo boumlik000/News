@@ -22,7 +22,8 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: #0000005d;
+            background: $primary-bg;
+            filter: saturate(490%)brightness(59%)contrast(200%)invert(29%);
             // filter: brightness(10%) contrast(150%);
             z-index: 1;
         }
@@ -37,13 +38,14 @@
             // background: #000;
         }
         .swiper-container{
+            margin: 0 auto;
             perspective: none;
             padding-bottom: 60px;
             position: relative;
             .slider-controler{
                 align-items: center;
                 display: flex;
-                // justify-content: center;
+                justify-content: center;
                 position: absolute;
                 bottom: 45px;
                 width: 100%;

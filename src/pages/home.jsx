@@ -16,7 +16,7 @@ function Home() {
         <NAVBAR />
         <div className='home-header_section'>
             <div className='img-home'>
-                <img src="img/img1.jpg" alt="" className='img-article'/>
+                <img src="img/bg.jpg" alt="" className='img-article'/>
                 <div className="filter"></div>
             </div>
             <CARD_NEWS_PROFILE />
@@ -31,30 +31,32 @@ function Home() {
                             {/* <CARDNEWS1 /> */}
                             <Swiper
                                 // effect="coverflow"
+                                // spaceBetween={50}
                                 grabCursor={true}
                                 centeredSlides={true}
                                 slidesPerView={'auto'}
                                 speed={2000} 
+                                slideToClickedSlide={true}
                                 className='swiper-container'
-                                // coverflowEffect={{
-                                //     rotate:0,
-                                //     stretch:0,
-                                //     deepth:0,
-                                //     modifier:2.5,
-                                // }}
+                                coverflowEffect={{
+                                    rotate:0,
+                                    stretch:0,
+                                    deepth:0,
+                                    modifier:2.5,
+                                }}
                                 navigation={{
                                     clickable:true,
                                     nextEl:'.swiper-button-next',
                                     prevEl:'.swiper-button-prev',
                                 }}
                                 pagination={{el:'.swiper-pagination',clickable:true}}
-                                modules={[EffectCoverflow,Pagination,Navigation]}
+                                modules={[Pagination,Navigation]}
                             >
           
-                                <SwiperSlide className='swiper-Slide'>
+                                <SwiperSlide className='swiper-Slide1'>
                                     <CARDNEWS1 startIndex={0} endIndex={4} />
                                 </SwiperSlide>
-                                <SwiperSlide className='swiper-Slide'>
+                                <SwiperSlide className='swiper-Slide2'>
                                     <CARDNEWS1 startIndex={4} endIndex={8}/>
                                 </SwiperSlide>
 
