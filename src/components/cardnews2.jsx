@@ -3,11 +3,12 @@ import "../styles/cardnews2.scss";
 import { Link } from 'react-router-dom';
 import {profileHome} from "./filteerdata/profilebox"
 import ICONTAG from "./icontag";
-function CARDNEWS2(props){
+function CARDNEWS2({ startIndex, endIndex }){
+    const cardsToShow = profileHome.slice(startIndex, endIndex);
     
     return(
         <>
-            {profileHome.map((item) => (
+            {cardsToShow.map((item) => (
                 <Link to={`/article/${item.id}`} key={item.id}>
                     <div className="cardnews_2 mt-4">
                         <div className="row no-gutters">

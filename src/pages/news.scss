@@ -1,7 +1,25 @@
 @import'../styles/variables';
-.footer-news{
+.news-container{
+    min-height: 100vh;
     position: relative;
 }
+.cards-news{
+    padding-bottom: 2.5rem ;
+}
+.footer-news{
+    // display: flex;
+    // position: absolute;
+    width: 100%;
+    bottom: -37px;
+    margin-top: 50px;
+    position: relative;
+    height: auto;
+    // @media (max-width:1000px) {
+    //     bottom: unset;
+    //     margin-top: unset;
+    // }
+}
+
 
 
 

@@ -52,10 +52,10 @@ function Home() {
                             >
           
                                 <SwiperSlide className='swiper-Slide'>
-                                    <CARDNEWS1 />
+                                    <CARDNEWS1 startIndex={0} endIndex={4} />
                                 </SwiperSlide>
                                 <SwiperSlide className='swiper-Slide'>
-                                    <CARDNEWS1 />
+                                    <CARDNEWS1 startIndex={4} endIndex={8}/>
                                 </SwiperSlide>
 
                                 <div className="slider-controler">
@@ -73,7 +73,7 @@ function Home() {
                     <div className="col-md-4">
                         <div className="home-week-news">
                             <h1 className='home-news-section_title-2'>this week</h1>
-                            <CARDNEWS2 />
+                            <CARDNEWS2 startIndex={0} endIndex={5}/>
                             <div className="cardnews_2-filter"></div>
                         </div>
                     </div>

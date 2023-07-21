@@ -5,7 +5,7 @@ import {FaFacebookF,FaGithub,FaTwitter,FaLinkedinIn} from 'react-icons/fa'
 function FOOTER() {
     return (
       <>
-        <div className="container py-4 footer-for-news">
+        <div className="container py-4 footer-for-news ">
             <div className="row gy-4 gx-5">
                 <div className="col-lg-3 col-md-6">
                     <h3 className="mb-3">logo</h3>

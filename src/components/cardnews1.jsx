@@ -3,10 +3,11 @@ import "../styles/cardnews1.scss";
 import { Link } from 'react-router-dom';
 import {profileHome} from "./filteerdata/profilebox"
 import ICONTAG from "./icontag";
-function CARDNEWS1(props){
+function CARDNEWS1({ startIndex, endIndex }){
+    const cardsToShow = profileHome.slice(startIndex, endIndex);
     return(
         <>          
-            {profileHome.map((x) => (
+            {cardsToShow.map((x) => (
                     <div className="cardnews_1   mt-4" key={x.id}>
                         <div className="row no-gutters">
                             <div className="col-md-3 p-0 d-flex align-items-center">

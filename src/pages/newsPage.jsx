@@ -23,13 +23,15 @@ function NEWS() {
     setSelectedCategory(category);
   };
 
+  const maxDisplayedArticles = 8;
   return (
     <>
+      <div className="news-container">
       <header>
         <NAVBAR />
       </header>
       <section className="container">
-        <div className="filter-news pt-5 mt-2">
+        <div className="filter-news  my-5">
           <h1 className="text-center my-4">News</h1>
           <div className="text-center mb-5">
             <GALERYNEWS
@@ -45,6 +47,7 @@ function NEWS() {
                     ? true
                     : item.categorie === selectedCategory
                 )
+                .slice(0, maxDisplayedArticles) // Slice the first 8 articles
                 .map((item) => (
                   <div className="col-md-3 col-6" key={item.id}>
                     <CARDNEWS3 data={item} />
@@ -54,10 +57,11 @@ function NEWS() {
           </div>
         </div>
       </section>
-      <footer className="mt-4 footer-news">
+      <footer className="footer-news">
         <FOOTER />
         <div className="footer-filter"></div>
       </footer>
+      </div>
     </>
   );
 }

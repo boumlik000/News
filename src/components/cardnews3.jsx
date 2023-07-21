@@ -4,6 +4,7 @@ import React from 'react';
 import  ICONTAG  from './icontag';
 
 function CARDNEWS3({ data }) {
+  
   return (
     
     <>

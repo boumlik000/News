@@ -43,7 +43,7 @@ function ARTICLE() {
 
         <div className='news-to-read mt-5'>
           <h1 className='title-second mb-4'>READ MORE ...</h1>
-          <CARDNEWS1 />
+          <CARDNEWS1 startIndex={0} endIndex={5}/>
         </div>
       </article>
       <footer>
