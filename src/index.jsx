@@ -23,7 +23,7 @@ import NEWS from './pages/newsPage';
 
 createRoot(document.getElementById('root')).render(
       
-    <Router>
+    <Router basename='/News'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/btn' element={<BTN />} />
