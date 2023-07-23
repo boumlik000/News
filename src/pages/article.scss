@@ -2,6 +2,7 @@
 
 .img-title{
     position: relative;
+    z-index: -10;
     .img-filter{
         position: relative;
         .img-article{
@@ -9,7 +10,6 @@
             object-fit: cover;
             width: 100%;
             object-position: center;
-            z-index: 0;
             
         }
         .filter{
@@ -18,9 +18,9 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: #0000005d;
+            background: #00000073;
             // filter: brightness(10%) contrast(150%);
-            z-index: 1;
+            z-index: 0;
         }
     }
     .title-article{
@@ -37,6 +37,14 @@
     }
 }
 article{
+    .span-autor{
+        float: right;
+        margin-right: 100px;
+        font-size: var(--fs-500);
+        font-family: 'font-titlenews',sans-serif;
+        text-decoration: underline;
+        color: $primary;
+    }
     .description-article{
         // font-size: 1.5rem;
         font-size: var(--fs-500);
@@ -49,6 +57,7 @@ article{
             float: left;
             margin-right: 5px; /* Add a small margin to separate the first letter from the rest of the text */
             color: $primary;
+            font-family: 'font-titlenews',sans-serif;
             // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 5px; 
         }
         @media (max-width:1000px) {

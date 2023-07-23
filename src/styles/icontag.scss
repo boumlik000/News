@@ -3,13 +3,13 @@
     color: $third;
     position: absolute;
     font-size: 30px;
-    background-color: #fff;
+    background-color: #fafafa;
     padding: 5px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: $shadow-card;
+    // box-shadow: $shadow-card;
     z-index: 2;
 }
 .cardnews_3-logo{
@@ -32,7 +32,7 @@
 .cardnews_2-logo{
     bottom: 10px;
     right: 10px;
-    
+    background: #fff;
     @media (max-width:575px) {
         bottom: unset;
         top: 10px;

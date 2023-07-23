@@ -49,6 +49,7 @@ export const profileHome= [
         "As Djokovic continues to make history with every match, his passion for the game remains unwavering. With a devoted fan base that spans the globe, Novak Djokovic has undoubtedly left an indelible mark on the world of tennis, and his journey of excellence is far from over."+
         "In conclusion, Novak Djokovic s remarkable skill, unwavering determination, and commitment to giving back have made him a true tennis legend and an inspiration to aspiring athletes worldwide. His legacy will forever be etched in the annals of sports history, and the world eagerly anticipates the next chapter in his extraordinary career.",
         icon:<MdSportsBasketball />,
+        autor:"Emma Johnson"
       },
       {
         id: 1,
@@ -65,6 +66,7 @@ export const profileHome= [
         "Beyond his presidency, Trump's influence on the Republican Party and American politics remains significant. The 'Trumpism' ideology continues to shape the party's direction and policy positions."+
         "While Trump's presidency saw a mix of accomplishments and controversies, his impact on the political landscape cannot be denied. As America looks to the future, the legacy of Donald J. Trump will be a subject of ongoing discussion and analysis in the realm of American politics.",
         icon:<GoLaw />,
+        autor:"Benjamin Anderson"
       },
       {
         id: 2,
@@ -83,6 +85,7 @@ export const profileHome= [
         "Moreover, World War I influenced the path to World War II, as unresolved geopolitical tensions and economic grievances laid the groundwork for further conflicts ."+
         "In conclusion, World War I was a watershed moment in history, not only for its devastating human cost but also for its profound economic consequences. The war's aftermath saw nations grappling with the challenges of reconstruction, inflation, and geopolitical realignments. The lessons learned from the economic aftermath of World War I continue to shape economic policies and international relations to this day.",
         icon:<TbBusinessplan />,
+        autor:"Isabella Garcia"
       },
       {
         id: 3,
@@ -100,6 +103,7 @@ export const profileHome= [
         +"The film's critical and commercial success catapulted Christopher Nolan's reputation as a visionary filmmaker, solidifying his place among the greats of cinema. 'Inception' earned numerous accolades, including four Academy Awards, and continues to be celebrated as one of the most influential and thought-provoking films in cinematic history."
         +"In conclusion, 'Inception' is an unparalleled cinematic experience that weaves together breathtaking visuals, a complex narrative, and powerful performances. Nolan's audacious exploration of the human psyche and his dedication to practical filmmaking have left an enduring mark on the world of cinema. 'Inception' remains an unforgettable journey into the realm of dreams and a testament to the boundless possibilities of storytelling on the silver screen.",
         icon:<BiCameraMovie />,
+        autor:"William Miller"
       },
       {
         id: 4,
@@ -117,6 +121,7 @@ export const profileHome= [
         +"Despite its vast cultural diversity, a sense of unity prevails among the people of India. The spirit of 'unity in diversity' binds the country together, fostering a sense of pride in its heritage and traditions."
         +"In conclusion, India's culture is an enchanting tapestry woven with a rich history, diverse traditions, and a celebration of life's colors. From its artistic expressions to its culinary delights, from its architectural wonders to its spiritual practices, India's cultural heritage is an endless source of wonder and inspiration. This nation, with its cultural abundance, continues to captivate the world and remains a timeless symbol of unity and cultural richness.",
         icon:<SiYourtraveldottv />,
+        autor:"Ava Martinez"
       },
       {
         id: 5,
@@ -133,6 +138,7 @@ export const profileHome= [
         +"As Ronaldo's journey with Juventus continues, the football world eagerly awaits each chapter of his extraordinary career. Whether it's his gravity-defying headers, sensational solo goals, or incredible work ethic, Ronaldo's legacy at Juventus and in the world of football is destined to endure for generations to come."
         +"In conclusion, Cristiano Ronaldo's tenure at Juventus has been nothing short of historic. The indomitable spirit, unwavering dedication, and unmatched talent he brought to the club elevated Juventus to new heights and left an indelible mark on footballing history. As the superstar continues to dazzle audiences on the field, his journey with Juventus remains a remarkable tale of sporting greatness.",
         icon:<MdSportsBasketball />,
+        autor:"Ethan Davis"
       },
       {
         id: 6,
@@ -149,6 +155,7 @@ export const profileHome= [
         +"'Casino' received critical acclaim for its captivating storytelling, stellar performances, and Scorsese's direction. It earned several Academy Award nominations and has since become a cult classic, leaving a lasting impact on the crime genre in cinema."
         +"In conclusion, 'Casino' is a gripping and engrossing film that peels back the layers of Las Vegas' glitzy surface to expose the hidden world of crime, ambition, and betrayal. With its stellar cast, powerful storytelling, and authentic depiction of the casino world, 'Casino' remains an unforgettable cinematic experience that continues to captivate audiences decades after its release.",
         icon:<BiCameraMovie />,
+        autor:"Sophia Jones"
       },
       {
         id: 7,
@@ -164,6 +171,7 @@ export const profileHome= [
         +"Despite the significant progress made during his reign, challenges remain. Issues such as unemployment, income inequality, and corruption continue to be areas of concern that require ongoing attention and efforts."
         +"In conclusion, Mohammed VI's reign as the King of Morocco has been marked by transformative political reforms, economic development, and efforts to address societal issues. His commitment to democratization, women's rights, and economic progress has propelled Morocco toward a brighter future. As he continues to navigate the complexities of governance and strive for a prosperous and inclusive society, King Mohammed VI remains a central figure in shaping Morocco's political landscape.",
         icon:<GoLaw />,
+        autor:"James Brown"
       }
       ,
       {
@@ -182,6 +190,7 @@ export const profileHome= [
         +"Challenges and Resilience: The Middle East has faced challenges such as conflicts, political instability, and social upheavals. Nevertheless, the region's cultural heritage remains resilient, acting as a source of unity and identity for its people. Cultural institutions, museums, and festivals play a vital role in preserving and promoting the region's artistic and historical legacy."
         +"In conclusion, the culture of the Middle East is a tapestry woven with the threads of ancient civilizations, religious significance, artistic expressions, and intellectual achievements. It has endured through centuries of change, reflecting the resilience and creativity of the region's people. As the Middle East continues to evolve, its cultural heritage remains an enduring source of pride and inspiration, fostering connections between its past, present, and future.",
         icon:<SiYourtraveldottv />,
+        autor:"Olivia Williams"
       }
       ,
       {
@@ -201,5 +210,6 @@ export const profileHome= [
         +"Diversification and Future Prospects: Recognizing the need for economic diversification, Russia has been focusing on sectors such as agriculture, technology, and manufacturing. The government aims to reduce reliance on oil exports and boost innovation to foster sustainable growth."
         +"In conclusion, Russia's economy has undergone significant changes since World War II, transitioning from a centrally planned system to a market-oriented economy. The country faced challenges during its transformation, including economic turbulence, dependence on commodities, and geopolitical tensions. As Russia looks to the future, diversification, innovation, and economic reforms are vital for sustaining growth and navigating the complexities of the global economy.",
         icon:<TbBusinessplan />,
+        autor:"Michael Smith"
       }
   ];

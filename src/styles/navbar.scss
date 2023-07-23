@@ -2,32 +2,51 @@
 .Navbar{
    /* Updated to occupy full width */
   height: 3.5rem;
-  max-width: 500px;
+  // max-width: 500px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background: transparent;
   
   // background-color: aqua;
-  z-index: 10;
-  .nav-logo{
-    font-size: var(--fs-500);
-    font-weight: 700;
-    color: #fff;
+  z-index: 1000;
+  box-shadow: 0 0 15px 1px #49555A44;
+  a{
+    // display: inline;
+    height: 70%;
+    max-width: 100%;
+    .nav-logo{
+      height: 100%;
+      max-width: 100%;
+      margin-right: 20px;
+      // font-size: var(--fs-300);
+      // font-weight: 700;
+      // color: #fff;
+      @media (max-width:768px) {
+        filter: invert(99%) sepia(0%) saturate(6765%) hue-rotate(232deg) brightness(124%) contrast(79%);
+      }
+    }
+
   }
   .nav-items{
+    margin-right: 50px;
+    @media (max-width:900px) {
+      margin-right: 10px;
+    }
     a{
       color: $primary;
       font-size: var(--fs-500);
       text-decoration: none;
-      margin: 15px;
+      margin: 5px;
       position: relative;
       opacity: .9;
       font-weight: 400;
+      transition: .2s all ease-in-out;
       &:hover{
         opacity: 1;
         color: $font-color;
+        padding: 2px;
         @media (max-width:768px) {
           color: $darkmode-font;
           font-weight: 500;
@@ -57,7 +76,7 @@
 
   .nav-filter{
     background-color: $secondary;
-    // opacity: 3%;
+    opacity: 30%;
     box-shadow: $shadow-card;
     position: absolute;
     height: 3.5rem;
@@ -82,6 +101,7 @@
       z-index: 1000;
       display: flex;
       flex-direction: column;
+      padding-bottom: 20px;
       top: 55px;
       background-color: $primary;
       width: 100%;
@@ -126,6 +146,7 @@
         width: 32px;
         height: 4px;
         background:$darkmode-font;
+        border-radius: 2px;
         &::before,&::after{
           content: "";
           position: absolute;

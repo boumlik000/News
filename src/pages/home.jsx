@@ -5,7 +5,7 @@ import CARD_NEWS_PROFILE from '../components/card';
 import CARDNEWS2 from '../components/cardnews2';
 import SEARCH from '../components/serach';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import  { Navigation, Pagination, EffectCoverflow } from 'swiper';
+import  { Navigation, Pagination } from 'swiper';
 import CARDNEWS1 from '../components/cardnews1';
 import FOOTER from '../components/footer';
 
@@ -27,10 +27,10 @@ function Home() {
                 <div className="row mt-5 pt-4">
                     <div className="col-md-8">
                         <div className="home-today-news">
-                            <h1 className='home-news-section_title-1'>Today's news</h1>
+                            <h1 className='home-news-section_title-1 big-titles'>Today's news</h1>
                             {/* <CARDNEWS1 /> */}
                             <Swiper
-                                // effect="coverflow"
+                                effect='coverflow'
                                 // spaceBetween={50}
                                 grabCursor={true}
                                 centeredSlides={true}
@@ -74,7 +74,7 @@ function Home() {
                     </div>
                     <div className="col-md-4">
                         <div className="home-week-news">
-                            <h1 className='home-news-section_title-2'>this week</h1>
+                            <h1 className='home-news-section_title-2 big-titles'>this week</h1>
                             <CARDNEWS2 startIndex={0} endIndex={5}/>
                             <div className="cardnews_2-filter"></div>
                         </div>

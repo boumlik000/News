@@ -10,7 +10,7 @@ const  NAVBAR =()=>{
     <>
 
           <div className="Navbar">
-            <span className="nav-logo">logo</span>
+            <Link to="/"><img className="nav-logo" src="/img/logo1.png" alt="img"/></Link>
             <div className={`nav-items ${isOpen && "open"}`}>
               <Link to="/"> Home </Link>
               <Link to="/newsPage"> news category</Link>

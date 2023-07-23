@@ -49,7 +49,7 @@ function NEWS() {
                 )
                 .slice(0, maxDisplayedArticles) // Slice the first 8 articles
                 .map((item) => (
-                  <div className="col-md-3 col-6" key={item.id}>
+                  <div className="col-lg-3 col-md-4 col-6" key={item.id}>
                     <CARDNEWS3 data={item} />
                   </div>
                 ))}

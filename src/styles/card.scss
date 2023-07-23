@@ -61,7 +61,7 @@
         }
         .logo-home-profile{
           position: absolute;
-          top: 25%;
+          top: 29%;
           left: 2%;
           font-size: 30px;
           // background-color: #fff;
@@ -141,18 +141,18 @@
           color: $primary;
           
         }
-        .reaad_more-slide-full{
-          font-size: var(--fs-500);
-          color: $third;
+        .read_more-slide-full{
+          font-size: var(--fs-400);
+          color: $primary;
           display: inline !important;
           a{
             color: $font-color;
           }
         }
         .timing-news{
-          font-size: var(--fs-500);
+          font-size: var(--fs-400);
           color: $third;
-          display: inline !important;
+          // display: inline !important;
         }
 
       }
@@ -194,11 +194,14 @@
     }
   }
 
-  @media (max-width:1100px) {
+  @media (max-width:1300px) {
     .swiper-main {
       .swiper-slide {
         .swiper-slide-content{
-
+          .logo-home-profile{
+            top: clamp(54px, 45%, 350px);
+            font-size: 25px;
+          }
           .small_title-slide{
             position: absolute;
             // bottom: 30px;
@@ -230,8 +233,8 @@
             max-height: 200px;
           }
           .logo-home-profile{
-            top: 25%;
-            font-size: 40px;
+            top: 40%;
+            font-size: 15px;
           }
         }
       }
@@ -299,8 +302,8 @@
           }
           .logo-home-profile{
             top: 5%;
-            font-size: 40px;
-            left: 10%;
+            font-size: 20px;
+            left: 12%;
           }
         }
       }
@@ -355,7 +358,7 @@
             color: $primary;
             
           }
-          .reaad_more-slide-full,.timing-news{
+          .read_more-slide-full,.timing-news{
             font-size: var(--fs-400);
           }
         }
@@ -446,7 +449,7 @@
             color: $primary;
             
           }
-          .reaad_more-slide-full,.timing-news{
+          .read_more-slide-full,.timing-news{
             font-size: var(--fs-300);
           }
           

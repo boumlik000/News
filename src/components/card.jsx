@@ -74,7 +74,7 @@ function CARD_NEWS_PROFILE(props) {
                   <img src={slide.imageUrl} alt={`Slide ${slide.id}`} className={`img-slider ${
                   slide.id === activeSlideId ? 'active' : ''
                   }`} />
-                  <h1 className='small_title-slide'>{slide.title}</h1>
+                  <h1 className='small_title-slide title-big'>{slide.title}</h1>
                   <span className='logo-home-profile'>{slide.icon}</span>
               </div>
               </SwiperSlide>
@@ -95,10 +95,10 @@ function CARD_NEWS_PROFILE(props) {
                     className={`img-active_profile ${showActiveSlide ? 'show_img' : ''}`}
                   />
                   <div className='content_slide-full'>
-                    <h1 className={`title_slide-full ${showActiveSlide ? 'show_title' : ''}`}>{activeSlide.title}</h1>
+                    <h1 className={`title_slide-full title-big ${showActiveSlide ? 'show_title' : ''}`}>{activeSlide.title}</h1>
                     <p className='description_slide-full'>{activeSlide.description}</p>
                     <Link to={`/article/${activeSlide.id}`} key={activeSlide.id}>
-                      <span className='reaad_more-slide-full '>Read More</span>                   
+                      <span className='read_more-slide-full '>Read More</span>                   
                     </Link>
                     <span className='timing-news'>12/12/2002</span>
 
